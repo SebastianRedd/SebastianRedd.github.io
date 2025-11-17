@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sebastian Redd – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #020617;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    header {
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      background: radial-gradient(circle at top, #1d4ed8, #020617 55%);
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.1rem;
+    }
+    header p {
+      margin: 0.2rem 0;
+      color: #cbd5f5;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    section {
+      background: #020617;
+      border: 1px solid #1f2937;
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #bfdbfe;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid #1d4ed8;
+      font-size: 0.75rem;
+      margin-right: 0.4rem;
+      margin-bottom: 0.25rem;
+      color: #dbeafe;
+    }
+    ul {
+      padding-left: 1.1rem;
+    }
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2.5rem;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sebastian Redd</h1>
+    <p>Aspiring Computer Science student · Interested in AI & software development</p>
+    <p>Massachusetts · Independent student</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I was born in Colombia and grew up in Massachusetts after moving to the U.S. as a child.
+        I’m an independent student, working part-time while finishing high school and challenging
+        myself with AP courses and computer science classes.
+      </p>
+      <p>
+        I’m especially interested in artificial intelligence and building tools that make life easier
+        for people in real situations like mine.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills & Interests</h2>
+      <div>
+        <span class="tag">Python (learning)</span>
+        <span class="tag">Web development</span>
+        <span class="tag">App Development class</span>
+        <span class="tag">AI & Machine Learning (interest)</span>
+        <span class="tag">Teaching</span>
+        <span class="tag">Bilingual / Spanish</span>
+        <span class="tag">Teamwork</span>
+        <span class="tag">Problem solving</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Personal Portfolio Website</strong> – This site. Built with HTML and CSS,
+          hosted on GitHub Pages to showcase my background, projects, and experience.
+        </li>
+        <li>
+          <strong>App Development Coursework</strong> – Building small applications as part of my
+          high school App Development class (details coming soon).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <strong>Student Guitar Teacher</strong> – Taught students how to play guitar for a full school year,
+          1 hour 15 minutes every weekday. Developed patience, communication, and leadership.
+        </li>
+        <li>
+          <strong>Food Runner · Restaurant</strong> – Part-time job used to support myself while living independently.
+          Learned how to work under pressure, coordinate with a team, and serve customers.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>High School Senior · Massachusetts</strong><br />
+          AP coursework and App Development class with a strong upward trend in grades,
+          especially during senior year.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        You can reach me at: <strong>your.email@example.com</strong><br />
+        (I’ll update this as I get a professional email and more projects.)
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/SebastianRedd" target="_blank">github.com/SebastianRedd</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Sebastian Redd
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
