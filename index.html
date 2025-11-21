@@ -5,7 +5,6 @@
   <title>Sebastian Hernandez – Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    /* Main styles - trying to keep it clean but personal */
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
@@ -15,35 +14,33 @@
       line-height: 1.6;
     }
 
-    /* Header section - spent way too much time getting this gradient right lol */
+    /*  HEADER */
     header {
       padding: 2.5rem 1.5rem;
       text-align: center;
-      background: radial-gradient(circle at top, #e11d48, #0a0a0a 60%); /* this gradient looks sick */
+      background: radial-gradient(circle at top, #e11d48, #0a0a0a 60%);
       color: #ffe4e6;
       border-bottom: 1px solid #3f0d16;
       box-shadow: 0 25px 60px rgba(225, 29, 72, 0.12);
     }
-    
     header h1 {
       margin: 0 0 0.5rem;
       font-size: 2.3rem;
       font-weight: 700;
     }
-    
     header p {
       margin: 0.3rem 0;
       color: #fecdd3;
     }
 
-    /* Main content wrapper */
+    /*  CONTENT CONTAINER */
     main {
       max-width: 900px;
       margin: 0 auto;
       padding: 1.5rem;
     }
 
-    /* Card sections - each section gets its own little container */
+    /*  CARD-STYLE SECTIONS */
     section {
       background: #111;
       border: 1px solid #3f0d16;
@@ -60,11 +57,11 @@
       font-weight: 600;
     }
 
-    /* Skills tags - these look pretty cool */
+    /*  TAGS */
     .tag {
       display: inline-block;
       padding: 0.2rem 0.6rem;
-      border-radius: 999px; /* making them super rounded */
+      border-radius: 999px;
       border: 1px solid #e11d48;
       font-size: 0.8rem;
       margin-right: 0.4rem;
@@ -77,7 +74,7 @@
       padding-left: 1.2rem;
     }
 
-    /* Link styling */
+    /*  LINKS */
     a {
       color: #fb7185;
       text-decoration: none;
@@ -86,23 +83,12 @@
       text-decoration: underline;
     }
 
-    /* Footer at the bottom */
+    /*  FOOTER */
     footer {
       text-align: center;
       padding: 1.5rem 1rem 2.5rem;
       font-size: 0.8rem;
       color: #a1a1aa;
-    }
-
-    /* Profile image styling - inline styles moved here for consistency */
-    .profile-img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-top: 1rem;
-      border: 3px solid #e11d48;
-      box-shadow: 0 10px 25px rgba(225, 29, 72, 0.25);
     }
   </style>
 </head>
@@ -110,30 +96,38 @@
 <body>
   <header>
     <h1>Sebastian Hernandez</h1>
-    <img src="MagicEraser_251117_025218.png" alt="Sebastian Hernandez" class="profile-img">
+    <img src="MagicEraser_251117_025218.png" alt="Sebastian Hernandez" style="
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 1rem;
+  border: 3px solid #e11d48;
+  box-shadow: 0 10px 25px rgba(225, 29, 72, 0.25);
+">
     <p>Aspiring Computer Science Student · Interested in AI & Software Development</p>
     <p>Massachusetts · Independent Student</p>
   </header>
 
   <main>
 
-    <!-- About section -->
+    <!--  ABOUT ME -->
     <section>
       <h2>About Me</h2>
       <p>
         I was born in Colombia and have lived in Massachusetts since I was a child.
-        I'm an independent student balancing school and a part-time job while staying focused
+        I’m an independent student balancing school and a part-time job while staying focused
         on my long-term goals. My academic performance has strengthened significantly in my
-        junior and senior years as I've taken more challenging courses in computer science and app development.
+        junior and senior years as I’ve taken more challenging courses in computer science and app development.
       </p>
       <p>
-        I'm actively learning programming, web development, and artificial intelligence through
+        I’m actively learning programming, web development, and artificial intelligence through
         personal projects and independent study. My goal is to pursue Computer Science with a focus on AI
-        and to help build tools that improve people's daily lives.
+        and to help build tools that improve people’s daily lives.
       </p>
     </section>
 
-    <!-- Skills section -->
+    <!--  SKILLS -->
     <section>
       <h2>Skills & Interests</h2>
       <div>
@@ -148,39 +142,40 @@
       </div>
     </section>
 
-    <!-- Projects section -->
+    <!--  PROJECTS -->
     <section>
-      <h2>Projects</h2>
-      <p>I'm currently developing several personal coding projects as I build my skills in computer science and app development. I will be showcasing them here as they are completed.</p>
-      
-      <ul>
-        <li>
-          <strong>Portfolio Website</strong>  
-          <br>
-          The site you are viewing now — designed and built using HTML and CSS, hosted through GitHub Pages. 
-          This portfolio will continue to grow with new projects throughout the year.
-        </li>
+  <h2>Projects</h2>
+  <p>I’m currently developing several personal coding projects as I build my skills in computer science and app development. I will be showcasing them here as they are completed.</p>
+  
+  <ul>
+    <li>
+      <strong>Portfolio Website</strong>  
+      <br>
+      The site you are viewing now — designed and built using HTML and CSS, hosted through GitHub Pages. 
+      This portfolio will continue to grow with new projects throughout the year.
+    </li>
 
-        <br>
+    <br>
 
-        <li>
-          <strong>App Development Coursework</strong>  
-          <br>
-          Developing small applications through my high school App Development class. 
-          These projects include working with interfaces, basic logic, and learning how to structure simple applications.
-        </li>
+    <li>
+      <strong>App Development Coursework</strong>  
+      <br>
+      Developing small applications through my high school App Development class. 
+      These projects include working with interfaces, basic logic, and learning how to structure simple applications.
+    </li>
 
-        <br>
+    <br>
 
-        <li>
-          <strong>Upcoming Projects</strong>  
-          <br>
-          I am currently working on beginner Python and web development projects, including a small AI experiment and a simple app idea. These will be added soon.
-        </li>
-      </ul>
-    </section>
+    <li>
+      <strong>Upcoming Projects</strong>  
+      <br>
+      I am currently working on beginner Python and web development projects, including a small AI experiment and a simple app idea. These will be added soon.
+    </li>
+  </ul>
 
-    <!-- Work experience -->
+</section>
+
+    <!--  EXPERIENCE -->
     <section>
       <h2>Experience</h2>
       <ul>
@@ -198,7 +193,7 @@
       </ul>
     </section>
 
-    <!-- Education info -->
+    <!--  EDUCATION -->
     <section>
       <h2>Education</h2>
       <ul>
@@ -209,7 +204,7 @@
       </ul>
     </section>
 
-    <!-- Contact details -->
+    <!--  CONTACT -->
     <section>
       <h2>Contact</h2>
       <p>
@@ -221,14 +216,11 @@
   </main>
 
   <footer>
-    &copy; <span id="current-year"></span> Sebastian Hernandez
+    &copy; <span id="year"></span> Sebastian Hernandez
   </footer>
 
   <script>
-    // Auto-updating year in footer
-    const yearElement = document.getElementById("current-year");
-    const currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
