@@ -73,7 +73,6 @@
       color: #fb7185;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
@@ -85,6 +84,7 @@
       color: #a1a1aa;
     }
 
+    /* PROJECT GRID */
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -92,6 +92,7 @@
       margin-top: 1.2rem;
     }
 
+    /* PROJECT CARD */
     .project-card {
       background: #111;
       border: 1px solid #3f0d16;
@@ -109,10 +110,12 @@
       box-shadow: 0 15px 40px rgba(225, 29, 72, 0.35);
     }
 
+    /* ICON STYLE */
     .icon {
       margin-right: 6px;
     }
 
+    /* PROJECT LINK BUTTON */
     .project-link {
       display: inline-block;
       margin-top: 0.6rem;
@@ -128,6 +131,7 @@
       background: rgba(225, 29, 72, 0.15);
     }
 
+    /* UPDATE TAG */
     .update-tag {
       display: block;
       margin-top: 0.5rem;
@@ -135,6 +139,7 @@
       color: #a1a1aa;
     }
 
+    /* FADE-IN ANIMATION */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(12px); }
       to { opacity: 1; transform: translateY(0); }
@@ -162,10 +167,13 @@
 
     <section>
       <h2>About Me</h2>
-      <p>I grew up in Colombia and moved to Massachusetts as a child. I study independently while working 
-      part-time and maintaining a clear focus on long-term goals. My grades rose significantly in junior 
-      and senior year as I took harder AP courses. I’m fluent in English and Spanish and work on personal 
-      CS projects weekly. My goal is to pursue Computer Science with a focus on AI.</p>
+      <p>
+        I grew up in Colombia and moved to Massachusetts as a child. I study independently while working 
+        part time and keeping a clear focus on long term goals. My grades rose in my junior and senior years
+        as I took harder AP coursework, including calculus, language, and app development. 
+        I am fluent in English and Spanish. I work on web development and AI projects weekly,
+        and my plan is to major in Computer Science with a focus on AI.
+      </p>
     </section>
 
     <section>
@@ -184,23 +192,89 @@
 
     <section>
       <h2>Projects</h2>
-      <p>I actively build and update applications every week as I grow my skills. These projects continue 
-      to evolve with new features and design improvements.</p>
+      <p>
+        I actively build and update new applications every week as I improve my skills in computer science.  
+        These projects are continuously evolving with new features and refinements.
+      </p>
 
       <div class="project-grid">
 
         <div class="project-card">
           <h3><span class="icon">🌐</span> Portfolio Website</h3>
-          <p>The portfolio you’re viewing now, designed using HTML and CSS. Updated regularly.</p>
+          <p>The portfolio you are viewing now — designed and built using HTML and CSS. Updated regularly as I learn more.</p>
           <span class="update-tag">Last Updated: 2025</span>
         </div>
 
         <div class="project-card">
           <h3><span class="icon">💰</span> Budget Tracker App</h3>
-          <p>A JS-powered web app to track expenses with category totals and local storage.</p>
+          <p>A web app built with HTML, CSS, and JavaScript allowing users to track expenses with category totals and persistent local storage.</p>
           <a href="https://sebastianred.org/budget-tracker" target="_blank" class="project-link">Open Project →</a>
           <span class="update-tag">Updated Weekly</span>
         </div>
 
         <div class="project-card">
-          <h3><span class="icon">📊</span> Grade Estimator App</h3
+          <h3><span class="icon">📊</span> Grade Estimator App</h3>
+          <p>A tool that allows students to calculate estimated course grades using categories, weights, and predicted scores.</p>
+          <a href="https://sebastianred.org/grade-estimator" target="_blank" class="project-link">Open Project →</a>
+          <span class="update-tag">Updated Weekly</span>
+        </div>
+
+        <div class="project-card">
+          <h3><span class="icon">🏆</span> DPS Coders Contest</h3>
+          <p>Currently competing in the DPS Coders programming contest, strengthening my problem-solving and clean-code skills.</p>
+          <span class="update-tag">Active</span>
+        </div>
+
+        <div class="project-card">
+          <h3><span class="icon">📱</span> App Development Coursework</h3>
+          <p>Various apps created through my high school App Development class, focusing on UI design and basic software architecture.</p>
+          <span class="update-tag">2024–2025</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <strong>Student Guitar Teacher — High School Program</strong><br>
+          Led daily 1h15m beginner guitar lessons for a full year. Gained strong communication and teaching skills.
+        </li>
+        <br>
+        <li>
+          <strong>Food Runner · Restaurant</strong><br>
+          Manage part-time work while supporting myself independently. Learned teamwork, responsibility, and time management.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>High School Senior · Massachusetts</strong><br>
+          Strong upward academic trend with AP coursework and a focus on computer science.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:sebastian103010@gmail.com">sebastian103010@gmail.com</a><br>
+        GitHub: <a href="https://github.com/SebastianRedd" target="_blank">github.com/SebastianRedd</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Sebastian Hernandez
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
